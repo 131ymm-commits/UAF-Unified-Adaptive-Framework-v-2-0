@@ -1,0 +1,356 @@
+# Experiment 014 (v2.0): L2 Chemistry — Valence, Bonds, and the Predictive Core of Molecules
+
+Repository context: UAF-Unified-Adaptive-Framework-v-2-0  
+Status: Layer 2–3 (cross-domain synthesis grounded in standard chemistry/QM)  
+Goal: Describe the **molecular level** (L2) in a way that reduces surprise more than standard fragmented explanations, while staying **mathematically disciplined**.
+
+---
+
+## 0. What is L2 (chemistry) in UAF?
+
+**L2 is the level where stable, discretized structures appear as attractors of quantum dynamics under thermodynamic constraints.**
+
+- L0: quantum states/fields (amplitudes, spin, statistics).
+- L1: classical/thermodynamic aggregates (pressure, temperature, energy flow).
+- **L2: molecules and reaction networks** — persistent patterns that minimize free energy in a constrained environment.
+
+UAF definition:
+
+\[
+\boxed{
+L_2 \equiv \{\text{systems whose stable structures are minima of an effective free-energy landscape over chemical compositions}\}
+}
+\]
+
+---
+
+## 1. The molecular state: from electrons to bonds
+
+### 1.1 Standard quantum chemical starting point (not invented)
+
+The electronic Schrödinger equation (Born–Oppenheimer approximation):
+
+\[
+\hat{H}_e(\mathbf{R}) \Psi_e(\mathbf{r};\mathbf{R}) = E_e(\mathbf{R})\Psi_e(\mathbf{r};\mathbf{R})
+\]
+
+- \(\mathbf{r}\): electron coordinates  
+- \(\mathbf{R}\): nuclear coordinates (parameters)  
+- \(E_e(\mathbf{R})\): potential energy surface (PES)
+
+**Chemistry happens because \(E_e(\mathbf{R})\) has multiple local minima.**  
+Each minimum corresponds to a stable geometry → a molecule.
+
+**UAF mapping:**  
+- The PES \(E_e(\mathbf{R})\) is a **prediction landscape**.  
+- Stable molecules are **attractors**: states where small perturbations do not increase free energy enough to destroy structure.
+
+---
+
+## 2. Why “valence” exists: a compression principle
+
+Valence is historically taught as a rule: atoms “want” 8 electrons (octet), or follow “valence = number of bonds”.
+
+That is a compressed surface rule. The deeper reason:
+
+### 2.1 Discretization emerges from quantum constraints
+
+Electrons occupy orbitals; orbitals fill under Pauli exclusion; configurations are quantized.
+
+Pauli exclusion (fermions):
+
+\[
+\text{No two electrons can share the same quantum state}
+\]
+
+**UAF mapping:** Pauli exclusion is the constraint that prevents representational collapse (too many identical “belief states” in the same place). It enforces *diversity of microstates*, which yields stable shell structure.
+
+### 2.2 Valence as an “interface dimension”
+
+Valence is the number of degrees of freedom an atom exposes for lowering total free energy by coupling to other atoms.
+
+In L2 we want a **small set of integers** (valences) instead of full many-body wavefunctions. This is maximum compression with minimal predictive loss.
+
+\[
+\boxed{
+\text{Valence} \approx \dim(\text{low-energy bonding subspace})
+}
+\]
+
+This explains why valence is robust across contexts: it is tied to low-energy accessible states.
+
+---
+
+## 3. Bond formation: the L2 free energy objective
+
+At fixed \(T, P\), chemical spontaneity is governed by Gibbs free energy:
+
+\[
+G = H - TS
+\]
+
+For a reaction:
+
+\[
+\Delta G = \Delta H - T\Delta S
+\]
+
+And equivalently with chemical potentials:
+
+\[
+\Delta G = \sum_i \nu_i \mu_i
+\]
+
+**UAF mapping:**  
+- \(\Delta G\) is the **macroscopic free-energy objective** at L2.  
+- A bond forms (or a reaction proceeds) if doing so reduces \(\Delta G\).  
+- “Surprise reduction” at L2 corresponds to **relaxation toward equilibrium** and **formation of stable minima** under constraints.
+
+---
+
+## 4. What a covalent bond “is” (predictively)
+
+### 4.1 Standard (MO theory / LCAO)
+
+Molecular orbitals as linear combinations of atomic orbitals:
+
+\[
+\psi = \sum_i c_i \phi_i
+\]
+
+Bonding vs antibonding orbitals lower/raise energy.
+
+**UAF mapping:** a covalent bond is a *shared, lower-energy predictive representation* of electron density that reduces the system’s free energy relative to separated atoms.
+
+A stable bond corresponds to:
+- a minimum in \(E_e(\mathbf{R})\),
+- separated by an activation barrier from dissociation.
+
+### 4.2 Bond order as a coarse but predictive invariant
+
+Bond order (qualitative):
+- single, double, triple bonds.
+
+In MO language, a standard proxy:
+
+\[
+\text{bond order} = \frac{N_b - N_{ab}}{2}
+\]
+
+where \(N_b\) = electrons in bonding orbitals, \(N_{ab}\) in antibonding.
+
+**UAF mapping:** bond order is a low-dimensional summary statistic that predicts:
+- bond length,
+- bond strength,
+- vibrational frequency.
+
+It’s compression with high NPG.
+
+---
+
+## 5. Ionic bonds: coupling via electrostatic free energy
+
+Ionic bonding is dominated by electrostatic stabilization:
+
+Coulomb energy (simplified):
+
+\[
+E \propto -\frac{q_1 q_2}{r}
+\]
+
+But real ionic solids are stabilized by lattice energy (Born–Landé / Madelung).
+
+**UAF mapping:** ionic bonding is a different regime of coupling: instead of shared density (covalent), we have **charge separation** that reduces \(G\) given environment constraints.
+
+---
+
+## 6. Hybridization and geometry: why molecules have shape
+
+VSEPR and hybridization are often taught as “rules”, but they are compressions of:
+- orbital symmetry,
+- repulsion minimization,
+- PES minima.
+
+Examples:
+- sp³ → tetrahedral
+- sp² → trigonal planar
+- sp → linear
+
+**UAF mapping:** molecular geometry is the minimizer of the free energy landscape in nuclear coordinate space:
+
+\[
+\mathbf{R}^\* = \arg\min_{\mathbf{R}} \; G(\mathbf{R}; T,P,\text{environment})
+\]
+
+Geometry rules are short codes for typical minimizers.
+
+---
+
+## 7. Resonance and aromaticity: topology in L2 (without mysticism)
+
+### 7.1 Resonance (standard)
+Multiple Lewis structures represent one quantum state.
+
+**UAF mapping:** resonance is model uncertainty: several discrete symbolic decompositions map to the same underlying electron density attractor.
+
+### 7.2 Aromaticity (Hückel rule)
+For planar cyclic conjugated systems:
+
+\[
+4n+2 \;\pi\text{-electrons} \Rightarrow \text{aromatic (stabilized)}
+\]
+
+**UAF mapping:** aromaticity is a **stability invariant**: a closed predictive loop in electron phase space that yields unusually low energy (low \(\Delta G\)). It is one of the cleanest bridges from L0 topology to L2 chemical stability.
+
+---
+
+## 8. Reactions: kinetics + thermodynamics (two constraints)
+
+Chemistry has two axes:
+
+### 8.1 Thermodynamic feasibility (ΔG)
+\[
+\Delta G < 0 \Rightarrow \text{reaction is favorable}
+\]
+
+### 8.2 Kinetic accessibility (activation barrier)
+Arrhenius:
+
+\[
+k = A e^{-E_a/(RT)}
+\]
+
+**UAF mapping:**
+- \(\Delta G\) determines whether an attractor exists (final state lower in free energy).
+- \(E_a\) determines whether the system can reach it within the horizon \(\Delta_{L2}\).
+
+A catalyst reduces \(E_a\) without changing \(\Delta G\).  
+**That is pure “precision engineering”:** faster convergence to the same attractor.
+
+---
+
+## 9. Equilibrium: “prediction completion”
+
+Equilibrium constant:
+
+\[
+K = e^{-\Delta G^\circ/(RT)}
+\]
+
+And reaction quotient relation:
+
+\[
+\Delta G = \Delta G^\circ + RT \ln Q
+\]
+
+At equilibrium: \(\Delta G = 0\) ⇒ \(Q=K\).
+
+**UAF mapping:** equilibrium is the point where expected prediction error vanishes *at the macroscopic chemical description level*. Not that microstates stop moving, but that the coarse model no longer has a gradient.
+
+---
+
+## 10. The periodic table as L2’s “model atlas”
+
+The periodic table is not a list. It is an atlas of valence subspaces.
+
+- Groups correspond to similar valence structure (same low-energy bonding subspace dimension).
+- Periods correspond to shell completion (quantized capacity changes).
+
+**UAF mapping:** the periodic table is a compressed index of predictable bonding behavior.
+
+This is the reason chemistry is learnable: the periodic table is a high-NPG compression of L0 microphysics.
+
+---
+
+## 11. L2 summary: the minimal canonical equations
+
+If we must compress all of chemistry into a small kernel compatible with UAF, the canonical set is:
+
+1) Born–Oppenheimer electronic structure:
+\[
+\hat{H}_e(\mathbf{R})\Psi = E(\mathbf{R})\Psi
+\]
+
+2) Gibbs objective:
+\[
+\Delta G = \Delta H - T\Delta S
+\]
+
+3) Chemical potential formulation:
+\[
+\Delta G = \sum_i \nu_i \mu_i
+\]
+
+4) Equilibrium constant:
+\[
+K = e^{-\Delta G^\circ/(RT)}
+\]
+
+5) Kinetics:
+\[
+k = A e^{-E_a/(RT)}
+\]
+
+6) Dynamics (gradient descent metaphor made formal at coarse scale):
+\[
+\dot{\mathbf{c}} \approx -\Gamma \nabla_{\mathbf{c}} G(\mathbf{c})
+\]
+(where \(\mathbf{c}\) are concentrations; valid as phenomenological relaxation in near-equilibrium regimes)
+
+These are standard. UAF’s contribution is not changing them, but:
+- placing them in the hierarchy,
+- interpreting them as predictive attractor mechanics,
+- explaining why the compression works (valence, periodicity, stability),
+- defining what counts as “truth” (NPG vs baseline) for chemical models.
+
+---
+
+## 12. What UAF adds to chemistry (non-trivial)
+
+### A) A uniform evaluation metric
+Chemistry models compete by predictive gain:
+
+- predicted yields,
+- predicted equilibrium constants,
+- predicted reaction rates,
+- predicted structures and energies.
+
+UAF demands a baseline and a loss and computes NPG.
+
+### B) Hierarchical coupling is explicit
+- L0 provides constraints: Pauli exclusion, quantization, spin statistics.
+- L1 provides constraints: temperature, pressure, entropy.
+- L2 produces stable molecules and networks.
+
+### C) A clean bridge to origin-of-life
+Autocatalysis + boundary + energy flow is a phase transition from L2 → L3.
+This can be expressed as “when a reaction network becomes a self-maintaining predictor”.
+
+---
+
+## 13. Falsification / audit criteria
+
+This experiment is wrong if:
+
+1) Valence cannot be treated as a robust low-energy bonding subspace across relevant chemical regimes.
+2) The “attractor” framing fails to predict stability and reaction direction better than standard thermodynamics.
+3) UAF does not produce any new measurable advantage (NPG≤0) in computational chemistry tasks.
+
+---
+
+## 14. Deliverable to repository
+
+Place this file as:
+
+`experiments/014_chemistry_molecules_valence.md`
+
+Add link in README experiment index.
+
+---
+
+## Closing
+
+Chemistry is not “rules”.  
+Chemistry is the first level where the universe compresses quantum microphysics into stable, manipulable macroscopic symbols: valence, bond, geometry, equilibrium.
+
+That compression is exactly what UAF calls **predictive gain**.
