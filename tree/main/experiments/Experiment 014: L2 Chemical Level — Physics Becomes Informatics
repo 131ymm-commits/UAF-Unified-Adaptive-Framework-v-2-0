@@ -1,0 +1,224 @@
+# Experiment 014: L2 Chemical Level — Physics Becomes Informatics
+
+Status: Layer 1 (core synthesis)
+
+Date: 2025-07-13
+
+## Thesis
+
+The chemical level (L2) is where physics transitions into informatics.
+
+Chemical reactions are computations that minimize energy.
+Reaction networks are predictive systems without neurons.
+Free energy of Gibbs is the first universal free energy of UAF, operational before life exists.
+
+This level produces the largest surprise reduction per unit of description length
+in the entire hierarchy from L-1 to L8.
+
+---
+
+## 1. Why L2 is the maximum NPG level
+
+| Transition | What changes | Description length | NPG |
+|---|---|---|---|
+| L-1 → L0 | Mathematical structure becomes quantum fields | Large (many degrees of freedom) | Medium |
+| L0 → L1 | Decoherence produces classical trajectories | Reduces to energy + momentum | Medium |
+| **L1 → L2** | **10²³ particle trajectories compress into a few concentrations + one number (ΔG)** | **Massive compression** | **Maximum** |
+| L2 → L3 | Chemical networks become self-reproducing cells | Adds metabolism and genetics | High |
+
+L2 compresses the entire state of a system into:
+
+    G = H - TS
+
+where:
+- H is enthalpy (energy content),
+- T is temperature (noise level),
+- S is entropy (disorder).
+
+This single equation replaces tracking 10²³ individual trajectories.
+
+That is maximal predictive compression.
+
+---
+
+## 2. Formal mapping
+
+### Standard chemistry
+
+Gibbs free energy:
+
+    ΔG = ΔG° + RT ln Q
+
+where:
+- ΔG° is standard free energy (prior),
+- R is gas constant,
+- T is temperature,
+- Q is reaction quotient (current state).
+
+Reaction proceeds spontaneously when ΔG < 0.
+
+### UAF interpretation
+
+- Q is the likelihood of the current state.
+- ΔG° is the prior (standard state).
+- ΔG is the surprise (distance from equilibrium).
+- T is the precision inverse (temperature = noise).
+
+The reaction "wants to" reach equilibrium.
+This is gradient descent on energy landscape.
+
+    ḃ_i = -γ_i ∇_{c_i} G({c}) + η_i(t)
+
+where:
+- c_i is concentration of species i (belief state),
+- G is Gibbs free energy (free energy objective),
+- γ_i is kinetic constant (learning rate),
+- η_i is thermal noise (exploration).
+
+This is literally the same equation as Active Inference:
+
+    Q(t+1) = Q(t) - α∇F(Q) + noise
+
+but without neurons, without consciousness, without representation.
+Pure thermodynamic inference.
+
+---
+
+## 3. What L2 builds
+
+### 3.1 Stable molecules = stored predictions
+
+A stable molecule (H₂O, CH₄, NH₃) is a local minimum of free energy.
+It persists because the system predicts it will persist.
+Destruction requires energy input (surprise injection).
+
+Molecular stability is the first form of memory.
+
+### 3.2 Catalysts = prediction operators
+
+A catalyst lowers the activation energy of a reaction.
+It does not change equilibrium. It speeds convergence.
+
+In UAF terms, a catalyst reduces the time to reach the attractor:
+
+    τ_catalyzed << τ_uncatalyzed
+
+A catalyst is a physical implementation of better prediction:
+it "knows" the transition state and guides the system toward it.
+
+### 3.3 Reaction networks = distributed inference
+
+A network of coupled reactions:
+
+    A → B → C → A (cycle)
+
+is a distributed computation. Each reaction is an update step.
+The network converges to a steady state that minimizes total ΔG.
+
+This is the first multi-step prediction system:
+output of one reaction is input to the next.
+
+### 3.4 Membranes = boundaries
+
+Lipid bilayers self-assemble in water because the hydrophobic effect
+minimizes free energy of the system.
+
+    ΔG_membrane = ΔG_hydrophobic + ΔG_curvature + ΔG_line_tension
+
+The membrane creates:
+- Inside vs. outside (boundary condition),
+- Concentration gradients (information storage),
+- Compartmentalization (independent prediction channels).
+
+This is the UAF boundary condition B_k appearing physically.
+
+---
+
+## 4. Connection to L3 (life)
+
+The chemical level produces the ingredients for life:
+
+| L2 Structure | L3 Function |
+|---|---|
+| Stable molecules | Building blocks (nucleotides, amino acids) |
+| Catalysts | Enzymes (protein catalysts) |
+| Reaction networks | Metabolism (autocatalytic cycles) |
+| Membranes | Cell boundary (autopoiesis) |
+| Concentration gradients | Information storage (pre-genetic) |
+
+The transition L2 → L3 occurs when:
+1. A reaction network becomes self-sustaining (autocatalysis).
+2. The network is enclosed in a membrane (boundary).
+3. The network can copy itself (reproduction).
+
+This is the origin of life as a UAF phase transition.
+
+---
+
+## 5. The deepest insight: chemistry is computation
+
+In L2, every reaction is an inference step:
+
+    Reactants (data) → Products (update) + Heat (prediction error)
+
+The entire history of prebiotic chemistry on Earth is a 500-million-year
+computation that minimized collective free energy of chemical systems,
+eventually converging on the autocatalytic set that we call "life."
+
+Life is not an accident.
+Life is the attractor of chemical inference.
+
+---
+
+## 6. Predictions
+
+1. Any sufficiently complex chemical system in a suitable environment
+   will converge toward autocatalytic networks (not random chemistry).
+   This is testable in origin-of-life experiments.
+
+2. The number of stable autocatalytic sets is limited by
+   the dimensionality of the chemical free energy landscape.
+   This should be enumerable for simple chemistries.
+
+3. Artificial autocatalytic networks can be designed by
+   minimizing ΔG subject to closure constraints.
+   This is a practical application for chemistry and materials science.
+
+4. The transition L2 → L3 should occur whenever:
+   - Autocatalysis exists,
+   - A boundary exists,
+   - Energy flow exists.
+   This makes life a generic prediction of UAF, not a miracle.
+
+---
+
+## 7. Formula
+
+$$
+\boxed{
+L_2 \equiv \left\{ \text{systems where } \dot{c}_i = -\gamma_i \nabla_{c_i} G(\{c\}) + \eta_i(t) \text{ minimizes collective free energy} \right\}
+}
+$$
+
+Chemistry is gradient descent on the Gibbs landscape.
+No neurons required. No consciousness required.
+Just physics computing its own equilibrium.
+
+---
+
+## 8. Surprise reduction
+
+Before: chemistry is "just reactions" — descriptive, not predictive.
+After: chemistry is distributed thermodynamic inference — the first
+computation that compresses 10²³ trajectories into one free energy function.
+
+NPG is maximized here because the compression ratio from L1 to L2
+is the largest single jump in the entire hierarchy.
+
+---
+
+## Connection to other experiments
+
+- **Exp 007 (Big Bang):** L1 → L2 mirrors the first structure formation after L-1 → L0.
+- **Exp 010 (Mathematics):** Chemistry implements L-1 structures (symmetry groups of molecules) physically.
+- **Exp 012 (Dual Embodiment):** L2 is the first system with both "body" (membrane) and "metabolism" (reaction network) — the chemical ancestor of the dual architecture.
